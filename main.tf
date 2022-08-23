@@ -1,4 +1,13 @@
 terraform {
+  cloud {
+    organization = "PANW-Terraform-Labs"
+    hostname     = "app.terraform.io"
+
+    workspaces {
+      name = "terraform-runtasks"
+    }
+  }
+
   required_providers {
     aws = {
       source = "hashicorp/aws"
