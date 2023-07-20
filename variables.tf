@@ -92,3 +92,8 @@ variable "versioning_enabled" {
   type        = bool
   default     = true
 }
+
+variable "instance_type" {
+  description = "Type of EC2 instance to use"
+  type        = string
+}
